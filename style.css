@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 500;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(49, 176, 13);
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+}
+
+.header {
+  display: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  margin: 20px 14px;
+  box-shadow:1px 1px 4px rgba(0 0 0 / 40%), -1px -1px 4px rgba(0 0 0 / 40%);
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tanzeel-logo {
+  width: 200px;
+}
+
+.button-read {
+  width: 150px;
+  padding: 5px;
+  margin-top: 16px;
+  border-radius: 13px;
+  background-color: #046300;
+  color: #ddd;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.hr-title {
+  width: 194px;
+  height: 5px;
+  margin: auto;
+  margin-block: 9px;
+  background-color: #046300; 
+}
+
+.masjid-image, .amana {
+  width: 100%;
+}
+
+/* scoll--images */
+.main-scroll-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 40px;
+}
+
+.cover {
+  position: relative;
+  width: 90%;
+  /* height: 50%; */
+}
+
+.cover::before {
+  position: relative;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.cover::after {
+  position: relative;
+  content: "";
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.scroll-images {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.child {
+  min-width: 600px;
+  height: 450px;
+  margin: 1px 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.scroll-images::-webkit-scrollbar {
+  -webkit-appearence: none;
+}
+
+.child-img {
+  width: 50%;
+  height: 50%;
+}
+
+.icon {
+  color: #fff;
+  background: #000;
+  outline: none;
+  cursor: pointer;
+  padding: 43px 8px;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #333;
+}
+
+.social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.fa-brands {
+  font-size: 35px;
+  margin-inline: 10px;
+  color: #ddd;
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ddd;
+  padding-top: 15px;
+}
+
+.link {
+  color: #ddd;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  color: #ddd;
+}
+
+.my-link {
+  text-decoration: underline;
+  color: aqua;
+}
+
+.dev-section {
+  padding-bottom: 10px;
+}
+
+
+/* ABOUT */
+.list {
+  list-style: disc;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+/* SERVICES */
+.carousel {
+  margin-top: 15px;
+}
+
+.card-service {
+  margin: 20px 14px;
+  box-shadow: 1px 1px 4px rgba(0 0 0 / 40%), -1px -1px 4px rgba(0 0 0 / 40%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-service {
+  width: 100%;
+}
+
+.description {
+  padding-block: 5px;
+  margin-inline: 8px;
+}
+
+.button-services {
+  display: flex;
+  flex-direction: column;
+  background-color: #046300;
+  color: #ddd;
+  padding: 9px 31px;
+  border-radius: 30px;
+  margin-top: 10px;
+  justify-content: center;
+  margin: auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width :576px) {
+  .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: sticky;
+      top: 0;
+      background-color: rgb(4 79 0);
+      box-shadow: 1px 1px 4px rgba(0 0 0 / 40%), -1px -1px 4px rgba(0 0 0 / 40%);
+      padding: 10px;
+    }
+
+    a:hover {
+      color: khaki;
+    }
+
+    .topnav {
+      display: none;
+    }
+
+    .brand-name {
+      color: #ddd;
+    }
+
+    ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  ul li {
+    margin: 10px;
+    font-size: 24px;
+  }
+
+  a {
+    color: #ddd;
+  }
+
+  .current {
+    color: aqua;
+  }
+
+  .button-services {
+    margin: unset;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .card-service {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:992px) {
+  ul li {
+    margin-inline:30px ;
+  }
+
+  .masjid-image,
+  .amana {
+      width: 100%;
+      height: 645px;
+    }
+
+    .carousel-image {
+      height: 800px;
+    }
+
+    .card-service, .card {
+      margin: 20px 230px;
+    }
+
+    .image-service {
+      width: 100%;
+      height: 330px;
+    }
+}

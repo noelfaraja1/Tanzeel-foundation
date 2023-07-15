@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* nisomeshe */
+
+.banner {
+    background: url(../images/nisomeshe-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 274px;
+    opacity: 0.9;
+}
+
+.text-banner {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: dancing script;
+    padding-block: 25%;
+}
+
+.para {
+    padding-block: 20px;
+}
+.campaigns-img {
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 576px) {
+    .text-banner {
+        padding-block: 10%;
+    }
+}
